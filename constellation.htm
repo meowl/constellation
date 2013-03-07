@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<link rel="stylesheet" href="style.css">
+		<script src="./all.js"></script>
+	</head>
+	<body>
+		<div id="bg_div">
+			<span style="font-weight: bold;">十二星座无聊排行生成工具</span>
+			<table id="main_table" class="main_table">
+				<tr>
+					<td colspan="3"><label>生成标题</label></td>
+				</tr>
+				<tr>
+					<td width="36%" colspan="2">
+						标题：<input id="title_star" name="title_st" class="text_input" value="十二星座" />
+					</td>
+					<td class="title_exp">
+						范例:<label class="exp_font">十二星座智商排行榜</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><label>排行类型</label></td>
+				</tr>
+				<!-- 预置多类型选择 -->
+				<tr>
+					<td colspan="3">
+						类型选择：<select id="type_sel" name="type_sel" class="text_input_short" currenttype=""></select>
+						<button id="type_btn">排序类型</button>
+						<button id="clean_btn">全部重置</button>
+					</td>
+				</tr>
+				<!-- 预置类型：自定义 -->
+				<tr>
+					<td colspan="2">星座选择及排序</td>
+					<td>添加星座描述</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div id="flt_div">
+							<div>
+								<select id="star_sel" name="star_sel" multiple="multiple" class="text_sel_short"></select>
+							</div>
+							<div>
+								<button id="addOpt_btn">添加>></button>
+								<button id="removeOpt_btn">移除<<</button>
+							</div>
+							<div>
+								<select id="star_sort_sel" name="star_sort" multiple="multiple" class="text_sel_short"></select>
+							</div>
+							<div>
+								<button id="up_btn">向上</button>
+								<button id="down_btn">向下</button>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="des_con_div">
+							<div id="des_left_div">
+								<span>
+									01.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									02.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									03.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									04.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									05.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									06.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+							</div>
+							<div id="des_right_div">
+								<span>
+									07.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									08.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									09.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									10.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									11.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+								<span>
+									12.<label name="star_lab">星座榜</label>
+									<input name="des_val" class="text_input" />
+								</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<!-- 描述信息 结束 -->
+				
+				<!-- 自定义 结束 -->
+				<!-- 预置类型选择结束 -->
+				<tr>
+					<td colspan="3">
+						排名方式：<select id="title_type_sel" name="title_type_sel" class="text_input_short"></select>
+						<button id="res_btn">预览结果</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<span>
+							<textarea id="res_text" cols="60" rows="5" ></textarea>
+						</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
